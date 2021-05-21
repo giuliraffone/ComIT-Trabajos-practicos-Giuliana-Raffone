@@ -28,7 +28,6 @@ public class tp3_ejercicio3 {
 		String listaPatentes = "";
 		
 		
-		
 		System.out.println("-Cantidad de patentes a procesar: ");
 		cantPatente = scan.nextInt();
 		scan.nextLine();
@@ -43,15 +42,19 @@ public class tp3_ejercicio3 {
 		else if (patente> 1000000 && patente<2000000) { impuesto = valorAuto * 0.1;}
 		else impuesto = valorAuto * 0.15;
 		if (patente>1300000)cont++;
+		
+		totalImpuesto = (totalImpuesto+=impuesto);
 	
-		System.out.println(listaPatentes+=("Dueño del automovil patente " + patente + ", el impuesto a abonar es de: " + impuesto + "\n"));	}
+		System.out.println(listaPatentes+=("Dueño del automovil patente " + patente + ", el impuesto a abonar es de: " + impuesto + "\n"));	
+		System.out.println("El total recaudado fue de: " + totalImpuesto);}
 		
 	porcentajePatente = (cont*100)/cantPatente;
-	totalImpuesto+=impuesto;
+
+	
 	
 	
 	System.out.println("Porcentaje de autos cuya numeracion es mayor a 1300000: "+ porcentajePatente + "%");
-	System.out.println("El total recaudado fue de: " + totalImpuesto);
+	
 	}}
 
 
