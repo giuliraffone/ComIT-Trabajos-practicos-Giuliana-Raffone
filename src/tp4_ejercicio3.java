@@ -12,40 +12,24 @@ public class tp4_ejercicio3 {
 		final String opcion3 = "TRIANGULO";
 		final String opcion4 = "RECTANGULO";
 		final String opcion5 = "TRAPECIO";
-		final String opcion6 = "REPETIR";
-		final String opcion7 = "SALIR";
 		
-		
-	
 		System.out.println("\t\t\t\tCALCULO DE AREA");
-		int opcion = menu(scan, opcion1, opcion2, opcion3, opcion4, opcion5);
-		
+		System.out.println("\n\nINGRESE UNA OPCION: " + "\n1)" + opcion1 + "\n2)" + opcion2 + "\n3)" + opcion3 + "\n4)" + opcion4 + "\n5)"+ opcion5);
+		int opcion = scan.nextInt();
 		
 		
 	switch(opcion) {
-	 case 1: System.out.println("El area del circulo es: " + areaCirculo(scan)+ "cm2");
-	 break;
-	 case 2: System.out.println("El area del cuadrado es:" + areaCuadrado(scan)+"cm2");
-	 break;
-	 case 3: System.out.println("El area del triangulo es: " + areaTriangulo(scan) + "cm2");
-	 break;
-	 case 4: System.out.println("El area del rectangulo es: "+ areaRectangulo(scan)+"cm2");
-	 break;
-	 case 5: System.out.println("El area del trapecio es: "+ areaTrapecio(scan)+"cm2");
-	 break;
-	 case 6: System.out.println(menu(scan, opcion1, opcion2, opcion3, opcion4, opcion5));
-	 case 7: System.out.println("Terminado");
-	 break;
-	 default: System.out.println("Opcion invalida");}
-	}
-
-
-
-	private static int menu(Scanner scan, final String opcion1, final String opcion2, final String opcion3,
-			final String opcion4, final String opcion5) {
-		System.out.println("\n\nINGRESE UNA OPCION: " + "\n1)" + opcion1 + "\n2)" + opcion2 + "\n3)" + opcion3 + "\n4)" + opcion4 + "\n5)"+ opcion5);
-		int opcion = scan.nextInt();
-		return opcion;
+		case 1: System.out.println("El area del circulo es: " + areaCirculo(scan)+ "cm2");
+		break;
+		case 2: System.out.println("El area del cuadrado es:" + areaCuadrado(scan)+"cm2");
+		break;
+		case 3: System.out.println("El area del triangulo es: " + areaTriangulo(scan) + "cm2");
+		break;
+		case 4: System.out.println("El area del rectangulo es: "+ areaRectangulo(scan)+"cm2");
+		break;
+		case 5: System.out.println("El area del trapecio es: "+ areaTrapecio(scan)+"cm2");
+		break;
+		default: System.out.println("Opcion invalida");}
 	}
 
 
