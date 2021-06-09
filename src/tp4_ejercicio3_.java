@@ -81,8 +81,7 @@ Scanner scan = new Scanner(System.in);
 	private static double areaCirculo(Scanner scan) {
 		System.out.println("Ingrese radio en centimetros");
 		double radio = scan.nextDouble();
-		double pi = 3.14;
-		double area = (pi*(Math.pow(radio, 2)));
+		double area = (Math.PI*(Math.pow(radio, 2)));
 		return area;
 
 	}
